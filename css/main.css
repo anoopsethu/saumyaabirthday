@@ -390,6 +390,10 @@ body.hidden section.mobile__view.active img {
   position: absolute;
 }
 
+.mob-only{
+    display: none;
+}
+
 @media (min-width: 1340px) and (max-width: 1440px) {
   section#hero .hero-content::before {
     width: 500px;
@@ -491,6 +495,16 @@ body.hidden section.mobile__view.active img {
     display: block;
     bottom: 0;
     position: absolute;
+  }
+  .mob-only{
+    display: block;
+    padding: 10px;
+  }
+  .mob-only img{
+    width: 100%;
+  }
+  .web-only{
+    display: none;
   }
 }
 
