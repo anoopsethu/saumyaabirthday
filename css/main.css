@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5,7 +8,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   color: #666666;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   scroll-behavior: smooth;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
@@ -26,7 +29,7 @@ img {
 }
 
 .img-container{
-    margin: 0px 10% 30px 10%;
+    margin: 0px 12.5% 30px 12.5%;
 }
 
 .intro-img{
@@ -230,7 +233,7 @@ canvas {
 
 section#team__wishes {
   position: relative;
-  padding: 50px 10%;
+  padding: 30px 12.5% 70px 12.5%;
 }
 
 section#team__wishes:before {
