@@ -28,6 +28,18 @@ img {
   vertical-align: baseline;
 }
 
+.toggle-btn{
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.toggle-btn img{
+    height: 80px;
+}
+
 .img-container{
     margin: 0px 12.5% 30px 12.5%;
 }
@@ -397,7 +409,7 @@ body.hidden section.mobile__view.active img {
   }
   section#team__wishes {
     position: relative;
-    padding: 28% 10% 0 10%;
+    padding: 20px 10% 0 10%;
   }
   section#team__wishes h4::before {
     top: 10.6%;

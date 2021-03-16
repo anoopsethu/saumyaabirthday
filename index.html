@@ -18,8 +18,12 @@
 
 <body> 
 
+	<a class="toggle-btn" onclick="changeImage()">
+		<img id="toggle-btn-img" src="img/button.png">
+	</a>
+
 	<div class="img-container">
-		<img src="img/intro.png" class="intro-img">
+		<img id="intro-img" src="img/intro.png" class="intro-img">
 	</div>
 	
 	<section id="team__wishes">
@@ -374,6 +378,22 @@
             </div>
         
      </section>
+
+<script language="javascript">
+    function changeImage() {
+
+    	console.log(document.getElementById("intro-img").src);
+
+        if (document.getElementById("intro-img").src == "/img/intro.png") 
+        {
+            document.getElementById("intro-img").src = "/img/intro1.png";
+        }
+        else 
+        {
+            document.getElementById("intro-img").src = "img/intro.png";
+        }
+    }
+</script>
 
 </body>
 </html>
