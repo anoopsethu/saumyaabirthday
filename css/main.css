@@ -250,7 +250,7 @@ section#team__wishes {
 
 section#team__wishes:before {
   content: '';
-  background: url(/images/team_wishes_before.png);
+  /*background: url(/images/team_wishes_before.png);*/
   display: block;
   width: 500px;
   height: 500px;
