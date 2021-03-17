@@ -37,6 +37,11 @@
 <body> 
 
 <section class="web-only">
+
+	<div class="loader" id="loader" style="display: none;">
+		<img src="img/loader1.gif">
+	</div>
+
 	<a class="toggle-btn animate__animated animate__pulse animate__infinite" onclick="changeImage()">
 		<img id="toggle-btn-img" src="img/button.png">
 	</a>
@@ -414,15 +419,28 @@
 
         if (document.getElementById("intro-img").style.display=="block") 
         {
+
+            document.getElementById("loader").style.display = "flex";
             document.getElementById("intro-img").style.display = "none";
             document.getElementById("intro-img-1").style.display = "block";
             document.getElementById("toggle-btn-img").src = "http://saumyaascheesecake.in/img/button1.png";
+
+        	setTimeout(function() { 
+            	document.getElementById("loader").style.display = "none";
+        	}, 2000);
+
+            
         }
         else 
         {
+            document.getElementById("loader").style.display = "flex";
             document.getElementById("intro-img").style.display = "block";
             document.getElementById("intro-img-1").style.display = "none";
             document.getElementById("toggle-btn-img").src = "http://saumyaascheesecake.in/img/button.png";
+
+            setTimeout(function() { 
+            	document.getElementById("loader").style.display = "none";
+        	}, 2000);
         }
     }
 </script>

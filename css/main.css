@@ -32,7 +32,7 @@ img {
     position: fixed;
     bottom: 60px;
     right: 60px;
-    z-index: 9999;
+    z-index: 9;
     cursor: pointer;
 }
 
@@ -46,6 +46,32 @@ img {
 
 .intro-img{
     max-width: 100%;
+}
+
+.loader{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: rgba(255,255,255,0.9);
+    text-align: center;
+    overflow: hidden;
+    z-index: 999;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader img{
+    position: relative;
+    margin: auto;
+    width: 200px;
+    border-radius: 12px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .grid {
