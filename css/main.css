@@ -332,7 +332,7 @@ box-shadow: 0px 4px 15px rgb(0 0 0 / 10%);
 }
 
 section#team__wishes .team__wishes--card.zb-4:last-child {
-  margin: 0 auto !important;
+  /*margin: 0 auto !important;*/
 }
 
 section#footer img {
@@ -413,7 +413,7 @@ body.hidden section.mobile__view.active img {
   }
   section#team__wishes {
     position: relative;
-    padding: 20px 10% 0 10%;
+    padding: 20px 10% 80px 10%;
   }
   section#team__wishes h4::before {
     top: 10.6%;
