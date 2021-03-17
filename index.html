@@ -3,13 +3,31 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Saumyaa's Cheese Cake | Happy Birthday Saumyaa</title>
-  <meta name="description" content="Saumyaa's Cheese Cake | Happy Birthday Saumyaa">
+	<!-- Primary Meta Tags -->
+	<title>Saumyaa's Cheesecake Factory</title>
+	<meta name="title" content="Saumyaa's Cheesecake Factory">
+	<meta name="description" content="Saumyaa, the big cheese welcomes you to the grand opening of her cheesecake factory on March 17, 2021. Come and cheese the day!">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://saumyaascheesecake.in/">
+	<meta property="og:title" content="Saumyaa's Cheesecake Factory">
+	<meta property="og:description" content="Saumyaa, the big cheese welcomes you to the grand opening of her cheesecake factory on March 17, 2021. Come and cheese the day!">
+	<meta property="og:image" content="">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://saumyaascheesecake.in/">
+	<meta property="twitter:title" content="Saumyaa's Cheesecake Factory">
+	<meta property="twitter:description" content="Saumyaa, the big cheese welcomes you to the grand opening of her cheesecake factory on March 17, 2021. Come and cheese the day!">
+	<meta property="twitter:image" content="">
+
+
   <meta name="author" content="SitePoint">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <link rel="icon" type="image/png" href="favicon.png">
 
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -19,12 +37,13 @@
 <body> 
 
 <section class="web-only">
-	<a class="toggle-btn" onclick="changeImage()">
+	<a class="toggle-btn animate__animated animate__pulse animate__infinite" onclick="changeImage()">
 		<img id="toggle-btn-img" src="img/button.png">
 	</a>
 
 	<div class="img-container">
-		<img id="intro-img" src="img/intro1.png" class="intro-img">
+		<img id="intro-img" src="img/intro1.png" class="intro-img animate__animated animate__fadeIn" style="display: block;">
+		<img id="intro-img-1" src="img/intro.png" class="intro-img animate__animated animate__fadeIn" style="display: none;">
 	</div>
 	
 	<section id="team__wishes">
@@ -37,7 +56,7 @@
                 </div>
 
                 <div class="card--body">
-                    <p>Happy Birthday, mate! 🎂🎉No matter what happens, always stay happy and kind like you are. I wish all the happiness and success for you. ☺️ May all your dreams come true. Have a good day! 🥳🤩</p>
+                    <p>Wish you a very happy birthday Saumyaa, and I hope that your travels take you to some amazing places!! Have an amazing year ahead! 🤗</p>
                 </div>
             </div>
             
@@ -49,7 +68,7 @@
                 </div>
 
                 <div class="card--body">
-                    <p>Hey <b>@Manik</b> happy birthday and all the best to you in the years to come! 🥳</p>
+                    <p>All the very best on the grand opening of Saumyaa's cheesecake factory. Also, hap-brie birthday, have a grate one! (this is the cheesiest I could find 🥳)</p>
                 </div>
             </div>
 
@@ -73,7 +92,7 @@
                 </div>
 
                 <div class="card--body">
-                    <p>Happy birthday <b>@Manik</b>. Have an amazing year ahead :)  </p>
+                    <p>Happy birthday Saumya! Have fun!</p>
                 </div>
             </div>
             
@@ -85,7 +104,7 @@
                 </div>
 
                 <div class="card--body">
-                    <p>Hey <b>@Manik</b> Happy birthday! Best wishes and keep seeking! More power to you!</p>
+                    <p>Happy birthday Saumyaa! have a great day! Keep travelling ahead!</p>
                 </div>
             </div>
 
@@ -300,7 +319,7 @@
                     </div>
     
                     <div class="card--body">
-                        <p>Happy Birthday <b>@Manik</b>! Stay happy and cheerful being that you are!</p>
+                        <p>Happy birthday Saumyaa! have an amazing year ahead 😊</p>
                     </div>
                 </div>
 
@@ -336,7 +355,7 @@
                     </div>
     
                     <div class="card--body">
-                        <p>Hey <b>@Manik</b>, wish you a very very happy and safe birthday. Stay blessed and happy. May you get to meet an alien soon :)</p>
+                        <p>Wish you a very happy birthday, Saumyaa. Have awesome memories ahead 🙂</p>
                     </div>
                 </div>
 
@@ -386,19 +405,21 @@
 	<img src="img/phone.png">
 </section>
 <script language="javascript">
+
+
     function changeImage() {
 
-    	// console.log(document.getElementById("intro-img").src);
-
-        if (document.getElementById("intro-img").src == "http://saumyaascheesecake.in/img/intro.png") 
+        if (document.getElementById("intro-img").style.display=="block") 
         {
-            document.getElementById("intro-img").src = "http://saumyaascheesecake.in/img/intro1.png";
-            document.getElementById("toggle-btn-img").src = "http://saumyaascheesecake.in/img/button.png";
+            document.getElementById("intro-img").style.display = "none";
+            document.getElementById("intro-img-1").style.display = "block";
+            document.getElementById("toggle-btn-img").src = "http://saumyaascheesecake.in/img/button1.png";
         }
         else 
         {
-            document.getElementById("intro-img").src = "http://saumyaascheesecake.in/img/intro.png";
-            document.getElementById("toggle-btn-img").src = "http://saumyaascheesecake.in/img/button1.png";
+            document.getElementById("intro-img").style.display = "block";
+            document.getElementById("intro-img-1").style.display = "none";
+            document.getElementById("toggle-btn-img").src = "http://saumyaascheesecake.in/img/button.png";
         }
     }
 </script>
